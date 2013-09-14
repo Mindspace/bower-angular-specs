@@ -300,7 +300,7 @@ And finally here is a sample `liveBoot.js` code:
 }( jasmine, requirejs ));
 ```
 
-Because we loaded `angular-spec.js` in our html file **and** we configured RequireJS to load the 
+Because we loaded `angular-specs.js` in our html file **and** we configured RequireJS to load the 
 live unit tests (see `live/dataservices/delegates/AuthenticationDelegateSpec` ), we can now easily test 1..n
 test suites each with live testing of remote APIs.
 
