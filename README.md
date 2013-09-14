@@ -156,7 +156,7 @@ Here is an example Jasmein Test Runner
 
           Then configure Jasmine and RequireJS... then start the tests
       -->
-      <script type="text/javascript" src="../vendor/angular-specs/angular-specs.js"></script>
+      <script type="text/javascript" src="../vendor/angular-specs/src/angular-specs.js"></script>
       <script type="text/javascript" src="../vendor/jasmine/lib/jasmine-core/jasmine-html.js"></script>
 
       <!-- 
