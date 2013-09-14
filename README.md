@@ -103,7 +103,7 @@ describe("Tests for AuthenticationDelegate ", function ()
 });
 ```
 
-A huge feature to notice is that **BOTH** specs use `authDelegate.login().then( <expectation checks> )` to perform the tests.
+A huge feature to notice is that **BOTH** specs use `authDelegate.login( <promise handlers> ).then( <expectation checks> )` to perform the tests.
 This is critically important... this means that your live testing is usually VERY close in solution to the *mock* test solution(s).
 
 So maintenance of both **mock** test suites and **live** test suites becomes significantly easier.
