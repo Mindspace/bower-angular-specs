@@ -30,7 +30,16 @@ angular.mock.$RootElementProvider = function() {
  */
 angular.module('ngMock', ['ng']).provider({
     $rootElement: angular.mock.$RootElementProvider
-});
+})
+.config(['$provide', function($provide) {
+    $provide.decorator('$browser', ['$delegate', function($delegate) {
+        $delegate.$$baseHref = '/';
+        $delegate.baseHref = function() {
+            return $delegate.$$baseHref;
+        };
+        return $delegate;
+    }]);
+}]);
 
 /**
  * Only publish global functions `module()` and `inject()`
